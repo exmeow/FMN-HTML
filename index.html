@@ -2,6 +2,22 @@
 <html>
 <head>
 	<style> body{background-attachment: fixed;background-image: url("https://s2.hdslb.com/bfs/static/blive/blfe-message-web/static/img/infocenterbg.a1a0d152.jpg") ;}</style>
+	<style type="text/css">
+		.hidden_div {
+			margin: 0; 
+			position: fixed; 
+			overflow: auto; 
+			top: 0; 
+			right: 0; 
+			bottom: 0; 
+			left: 0; 
+			z-index: 999; 
+			outline: 0; 
+			opacity: 0.5; 
+			background: #000;
+			display:none; 
+			}
+	</style>
 	<script>
 		function copyText()
 		{
@@ -166,10 +182,18 @@
 	    display: block;
 	}
 	</style>
+	<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+	<script type="text/javascript">
+		function heimu(){
+			document.getElementById("dark").style.display="block";
+			alert('你当前被怀疑为嫌疑人，ip已被上传到技术人员终端：'+returnCitySN["cip"]+','+returnCitySN["cname"]);
+		}
+	</script>
 </head> 
 <body onselectstart="return false">
+	<div class="hidden_div" id="dark"></div>
 	<div class="top">
-	    <center> 
+	    <center>
 	        <ul>
 				<li>
 					<a href="#" target="_blank">
@@ -185,6 +209,7 @@
 						<li><a href="https://github.com/exmeow/FMN-HTML" target="_blank">Github的反迷你世界群</a></li>
 					</ul>
 				</li>
+				<li><a href="javascript:;" onclick="heimu()">反MC</a></li>
 			</ul>
 	    </center>      
 	</div>
