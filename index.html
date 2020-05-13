@@ -3,6 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<style> body{background-attachment: fixed;background-image: url("https://s2.hdslb.com/bfs/static/blive/blfe-message-web/static/img/infocenterbg.a1a0d152.jpg") ;}</style>
+	<style type="text/css">
+		.hidden_div {
+			margin: 0; 
+			position: fixed; 
+			overflow: auto; 
+			top: 0; 
+			right: 0; 
+			bottom: 0; 
+			left: 0; 
+			z-index: 999; 
+			outline: 0; 
+			opacity: 0.5; 
+			background: #000;
+			display:none; 
+			}
+	</style>
 	<script>
 		function copyText()
 		{
@@ -176,6 +192,7 @@
 	</script>
 </head> 
 <body onselectstart="return false">
+	<div id="dark" class="hidden_div"></div>
 	<div class="top">
 	    <center> 
 	        <ul>
