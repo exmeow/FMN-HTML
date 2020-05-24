@@ -31,7 +31,7 @@ input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px;
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
 p { line-height: inherit; }
-h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
 p { orphans: 4; }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
@@ -82,7 +82,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print {
-  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   html.blink-to-pdf { font-size: 13px; }
@@ -93,6 +93,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 a img, img a { cursor: pointer; }
 pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
 p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
 p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
@@ -176,6 +177,19 @@ body {
   	padding: 30px;
     padding-bottom: 100px;
 }
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
 #write > ul:first-child,
 #write > ol:first-child{
     margin-top: 30px;
@@ -504,7 +518,36 @@ header, .context-menu, .megamenu-content, footer{
 </style>
 </head>
 <body class='typora-export os-windows' >
-<div  id='write'  class = 'is-node'><h1><a name="scp-cn-cxk" class="md-header-anchor"></a><span>SCP-CN-CXK</span></h1><p><span>项目编号：SCP-CN-CXK</span></p><p><span>项目等级：Keter</span></p><p><span>特殊收容措施：项目SCP-CN-CXK应始终保管于一个隔音、不透明并有通风管的收容间内，应始终避免与其他人员的物理接触。如果要发生不可避免的接触，人员应佩戴高级隔音耳机来避免被精神污染。</span></p><p><span>描述：SCP-CN-CXK是一种不明生物，其能通过特有的鬼畜能力：唱《只因你太美</span><span style="color:gray;text-decoration:line-through;"><span>鸡你太美</span></span><span>》使听到其歌声的人受到严重的精神污染。受到精神污染的人（以下简称SCP-CN-CXK-1）会一起跟着唱《只因你太美》并在30分钟后因心跳骤停而亡。SCP-CN-CXK-1也能使周围的人受到精神污染，导致了瘟疫产生的可能性。</span><span style="font-weight:bold;font-style:italic;color:green;"><span>鸡你太美！！！！！！</span></span></p><p>&nbsp;</p><p>&nbsp;</p><p><img src="images/SCP-CN-CXK.jpg" width="500"></p><center style="color:gray;">收容所里的SCP-CN-CXK</center><p>&nbsp;</p><p>&nbsp;</p><audio src="audios/SCP-CN-CXK.mp3" controls=""></audio>
-<center style="color:gray;">SCP-CN-CXK鬼畜音频（需注射模因疫苗，否则将被转化为SCP-CN-CXK-1</center><p><span>20██年█月██日，一名值班人员因听见通风管中隐隐约约传出的歌声而被转变成SCP-CXK-1。这个事件导致了AK级世界末日。值班人员快速被传染为SCP-CN-CXK-1，SCP-CN-CXK从收容所中逃出。九尾狐特遣队尝试射击SCP-CN-CXK，但耳机被SCP-CN-CXK的篮球所砸烂，被歌声所转变为SCP-CN-CXK-1，无人幸存。SCP-CN-CXK在几天之内很快感染了数亿人。最后，白给狐特遣队投掷了数百枚强次声波氢弹杀死了被感染的所有宏观碳基生命。对SCP-CN-CXK的寻找仍在进行。</span></p><p><span>值得注意的是，SCP-CN-CXK在AK级世界末日事件中使SCP-3812转化为SCP-CN-CXK-1而无效化并在30分钟后死亡。可能对SCP-682有同样的效果。</span></p><p><span>SCP-CN-CXK对</span><a href='SCP-CN-L8.html'><span>SCP-CN-L8</span></a><span>无效，</span><a href='SCP-CN-L8.html'><span>SCP-CN-L8</span></a><span>会尝试攻击SCP-CN-CXK，因为SCP-CN-CXK的鬼畜让</span><a href='SCP-CN-L8.html'><span>SCP-CN-L8</span></a><span>反感。</span></p></div>
+<div  id='write'  class = 'is-node'><h1><a name="scp-cn-cxk" class="md-header-anchor"></a><span>SCP-CN-CXK</span></h1><p><span>项目编号：SCP-CN-CXK</span></p><p><span>项目等级：</span><span style="font-weight:bold;background-color:red;"><span>Keter</span></span><span>  </span><img src="http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/keter-icon.svg" width="50" style="background-color:#c40233;border-radius: 50%;border-width:2px;border:solid 2px black;"></p><p><span>扰动等级：</span><span style="font-weight:bold;background-color:red;"><span>Amida</span></span><span>  </span><img src="http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/amida-icon.svg" width="50" style="background-color:#c40233;border-radius: 50%;border-width:2px;border:solid 2px black;"></p><p><span>风险等级：</span><span style="font-weight:bold;background-color:red;"><span>Critical</span></span><span>  </span><img src="http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/critical-icon.svg" width="50" style="background-color:#c40233;border-radius: 50%;border-width:2px;border:solid 2px black;"></p><p><span>SCP-CN-CXK必须被尽快消灭。</span></p><hr><div style="background-image:url('http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg');background-attachment: fixed;width:100px;text-align:center;margin:0 auto;">
+    <span style="font-weight:bold;color:blue;">以下是宇宙绝密内容</span>
+    <br>
+    <span style="font-weight:bold;color:red;">任何未经授权的人员都将被6级模因抹杀触媒杀死</span>
+</div><div>
+    <div style="background-image:url('http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg');background-attachment: fixed;height:5px;">
+</div>
+    <div style="height:2px;">
+    </div>
+    <div style="background-image:url('http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg');background-attachment: fixed;height:5px;">
+</div>
+    <div style="height:2px;">
+    </div>
+    <div style="background-image:url('http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg');background-attachment: fixed;height:5px;">
+</div>
+    <div style="height:2px;">
+    </div>
+    <div style="background-image:url('http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg');background-attachment: fixed;height:5px;">
+</div>
+    <div style="height:2px;">
+    </div>
+    <div style="background-image:url('http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg');background-attachment: fixed;height:5px;">
+</div>
+    <div style="height:2px;">
+    </div>
+    <div style="background-image:url('http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg');background-attachment: fixed;height:5px;">
+</div>
+</div><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p><img src="http://scp-wiki.wdfiles.com/local--resized-images/scp-001/fractal001/medium.jpg"></img></p><div style="background-image:url('http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg');background-attachment: fixed;width:100px;text-align:center;margin:0 auto;">
+    <span style="font-weight:bold;color:green;">抹杀结束</span>
+</div><p><span>特殊收容措施：项目SCP-CN-CXK应始终保管于一个隔音、不透明并有通风管的收容间内，应始终避免与其他人员的物理接触。如果要发生不可避免的接触，人员应佩戴高级隔音耳机来避免被精神污染。</span></p><p><span>描述：SCP-CN-CXK是一种不明生物，其能通过特有的鬼畜能力：唱《只因你太美</span><span style="color:gray;text-decoration:line-through;"><span>鸡你太美</span></span><span>》使听到其歌声的人受到严重的精神污染。受到精神污染的人（以下简称SCP-CN-CXK-1）会一起跟着唱《只因你太美》并在30分钟后因心跳骤停而亡。SCP-CN-CXK-1也能使周围的人受到精神污染，导致了瘟疫产生的可能性。</span><span style="font-weight:bold;font-style:italic;color:green;"><span>鸡你太美！！！！！！</span></span></p><p>&nbsp;</p><p>&nbsp;</p><p><img src="images/SCP-CN-CXK.jpg" width="500"></p><center style="color:gray;">收容所里的SCP-CN-CXK</center><p>&nbsp;</p><p>&nbsp;</p><audio src="audios/SCP-CN-CXK.mp3" controls=""></audio>
+<center style="color:gray;">SCP-CN-CXK鬼畜音频（需注射模因疫苗，否则将被转化为SCP-CN-CXK-1）</center><p><span>20██年█月██日，一名值班人员因听见通风管中隐隐约约传出的歌声而被转变成SCP-CXK-1。这个事件导致了AK级世界末日。值班人员快速被传染为SCP-CN-CXK-1，SCP-CN-CXK从收容所中逃出。九尾狐特遣队尝试射击SCP-CN-CXK，但耳机被SCP-CN-CXK的篮球所砸烂，被歌声所转变为SCP-CN-CXK-1，无人幸存。SCP-CN-CXK在几天之内很快感染了数亿人。最后，白给狐特遣队投掷了数百枚强次声波氢弹杀死了被感染的所有宏观碳基生命。对SCP-CN-CXK的寻找仍在进行。</span></p><p><span>值得注意的是，SCP-CN-CXK在AK级世界末日事件中使SCP-3812转化为SCP-CN-CXK-1而无效化并在30分钟后死亡。可能对SCP-682有同样的效果。</span></p><p><span>SCP-CN-CXK对</span><a href='SCP-CN-L8.html'><span>SCP-CN-L8</span></a><span>无效，</span><a href='SCP-CN-L8.html'><span>SCP-CN-L8</span></a><span>会尝试攻击SCP-CN-CXK，因为SCP-CN-CXK的鬼畜让</span><a href='SCP-CN-L8.html'><span>SCP-CN-L8</span></a><span>反感。</span></p><p><span>如果SCP-CN-CXK长时间仍未找到，有可能会触发第二次世界末日。</span></p></div>
 </body>
 </html>
